@@ -35,7 +35,7 @@ class XMLSignature
 
   def computed_digest_value(ds_reference)
     signed_element_in_canonical_representation = c14n(signed_element(ds_reference))
-    Base64.strict_encode64(algorithm_class(ds_reference).digest(signed_element_in_canonical_representation))
+    Base64.encode64(algorithm_class(ds_reference).digest(signed_element_in_canonical_representation)).chop
   end
 
   def c14n(node)

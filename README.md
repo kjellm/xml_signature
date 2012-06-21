@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/kjellm/xml_signature.png)](http://travis-ci.org/kjellm/xml_signature)
+[![Build Status](https://secure.travis-ci.org/kjellm/xml_signature.png?branch=master)](http://travis-ci.org/kjellm/xml_signature)
 
 XML Signature
 =============
