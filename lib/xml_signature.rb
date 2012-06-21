@@ -45,11 +45,11 @@ class XMLSignature
   end
 
   def signature
-    Base64.decode64(xpath(@ds_signature, "//ds:SignatureValue").text)
+    Base64.decode64(xpath(@ds_signature, "//ds:SignatureValue").text.strip)
   end
 
   def certificate_text
-    xpath(@ds_signature, "//ds:X509Certificate").text
+    xpath(@ds_signature, "//ds:X509Certificate").text.strip
   end
   
   alias :given_certificate :certificate_text
