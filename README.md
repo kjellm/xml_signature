@@ -3,8 +3,7 @@ XML Signature
 
 A (partial) Ruby implementation of the XML Signature standard.
 
-So far it can only be used to verify signed xml documents. That is, it
-can not be used to sign XML documents.
+So far it can only be used to verify signed xml documents.
 
 
 Install
@@ -23,7 +22,7 @@ Usage
 Author
 ------
 
-Kjell-Magne Øierud <kjellm AT oierud DOT net>
+Kjell-Magne Øierud (kjellm AT oierud DOT net)
 	
 Bugs
 ----
