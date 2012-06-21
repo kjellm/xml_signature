@@ -1,6 +1,6 @@
 # encoding: utf-8
 $:.push File.expand_path("../lib", __FILE__)
-Require "xml_signature/version"
+require "xml_signature/version"
 
 Gem::Specification.new do |s|
   s.name        = "xml_signature"
@@ -18,4 +18,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.required_ruby_version = '>= 1.8.7'
+
+  s.add_runtime_dependency 'xmlcanonicalizer'
 end
